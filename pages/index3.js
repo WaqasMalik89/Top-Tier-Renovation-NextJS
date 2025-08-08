@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';  // Use Next.js Image component for optimized images
-import Script from 'next/script'; 
-import Link from 'next/link';
 
 /**
  * Home Page Component - Top Tier Renovation Services
@@ -73,7 +71,7 @@ export default function Home() {
         <meta name="twitter:title" content="Top Tier Renovation Services | Landscaping in GTA" />
         <meta name="twitter:description" content="Transform your outdoor space with premium landscaping and renovation services across GTA and nearby areas." />
         <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg" />
-
+    
         {/* Structured Data JSON-LD for Local Business */}
         <script
           type="application/ld+json"
@@ -111,11 +109,7 @@ export default function Home() {
           <a href="#portfolio" className="btn">View Our Projects</a>
         </div>
       </header>
-      <nav className="top-nav">
-  <Link href="/about">About</Link>
-  <Link href="/services">Services</Link>
-  <Link href="/areas-we-serve">Areas We Serve</Link>
-</nav>
+
       <main>
         <section id="services">
           <h2>Our Services</h2>
@@ -233,8 +227,6 @@ export default function Home() {
           </a>
         </div>
       </footer>
-       {/* External script loaded after everything else */}
-    <Script src="/js/script.js" strategy="afterInteractive" />
     </>
   );
 }
